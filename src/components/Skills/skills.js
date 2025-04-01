@@ -55,7 +55,7 @@ export const Skills = () => {
             className="skillBarImg"
           />
           <div className="skillBarText">
-            <h2>Debator/Public Speaker</h2>
+            <h2>Debater/Public Speaker</h2>
             <p>
               I am a passionate debater, public speaker, and writer with strong
               communication and teamwork skills. I collaborate effectively with
