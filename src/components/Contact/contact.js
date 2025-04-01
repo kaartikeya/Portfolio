@@ -1,9 +1,10 @@
 import React from "react";
 import "./contact.css";
 import Aktu from "../../assets/aktu_img.png";
-import githubIcon from "../../assets/github-icon.webp";
-import linkedinIcon from "../../assets/linkedin-icon.jpg";
+import githubIcon from "../../assets/github.png";
+import linkedinIcon from "../../assets/linkedin.png";
 import Blogger from "../../assets/blogger.png";
+import Gmail from "../../assets/mail.png";
 import emailjs from "@emailjs/browser";
 
 import { useRef } from "react";
@@ -30,7 +31,7 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contactPage">
+    <div className="contactPage">
       <div id="exp">
         <h1 className="contactPageTitle">Education</h1>
         <p className="expDesc">
@@ -78,9 +79,12 @@ export const Contact = () => {
             <a href="https://theboiledegg01.blogspot.com/">
               <img src={Blogger} alt="Blogger" className="link" />
             </a>
+            <a href="mailto:kaartikeya.1@gmail.com">
+              <img src={Gmail} alt="Blogger" className="link" />
+            </a>
           </div>
         </form>
       </div>
-    </section>
+    </div>
   );
 };

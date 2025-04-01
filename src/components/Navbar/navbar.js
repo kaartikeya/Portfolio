@@ -28,11 +28,22 @@ export const Navbar = () => {
           to="skills"
           spy={true}
           smooth={true}
-          offset={-50}
+          offset={-20}
           duration={500}
           className="desktopMenuListItem"
         >
           About
+        </Link>
+        <Link
+          activeClass="active"
+          to="experience-section"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          className="desktopMenuListItem"
+        >
+          Experience
         </Link>
         <Link
           activeClass="active"
@@ -50,7 +61,7 @@ export const Navbar = () => {
           to="exp"
           spy={true}
           smooth={true}
-          offset={-20}
+          offset={-50}
           duration={500}
           className="desktopMenuListItem"
         >
@@ -79,10 +90,14 @@ export const Navbar = () => {
       <div className="navMenu" style={{ display: showMenu ? "flex" : "none" }}>
         <Link
           activeClass="active"
+          // Adds the specified class to the Link when the target section is active (visible in the viewport).
           to="intro"
+          // Specifies the id of the target section in the DOM to scroll to.
           spy={true}
+          // If true, the activeClass is applied when the target section is in the viewport.
           smooth={true}
           offset={-100}
+          // Adjusts the final scroll position (in pixels) to account for things like fixed headers or spacing.
           duration={500}
           className="listItem"
           onClick={() => setShowMenu(false)}
@@ -103,6 +118,18 @@ export const Navbar = () => {
         </Link>
         <Link
           activeClass="active"
+          to="experience-section"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          className="listItem"
+          onClick={() => setShowMenu(false)}
+        >
+          Experience
+        </Link>
+        <Link
+          activeClass="active"
           to="works"
           spy={true}
           smooth={true}
@@ -111,7 +138,7 @@ export const Navbar = () => {
           className="listItem"
           onClick={() => setShowMenu(false)}
         >
-          Portfolio
+          Projects
         </Link>
         <Link
           activeClass="active"
@@ -123,7 +150,7 @@ export const Navbar = () => {
           className="listItem"
           onClick={() => setShowMenu(false)}
         >
-          Expeirence
+          Education
         </Link>
         <Link
           activeClass="active"

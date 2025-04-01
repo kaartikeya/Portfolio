@@ -1,18 +1,17 @@
 #works {
-  min-height: calc(100vh - 4rem);
   width: 100vw;
   max-width: 60rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
   text-align: center;
-  padding: o 1rem;
+  padding-top: 2rem;
+  margin: 0 auto 140px auto;
 }
 
 .worksTitle {
-  margin: 1rem 0;
+  margin-bottom: 1rem;
   font-size: 3rem;
 }
 
@@ -26,11 +25,12 @@
 .worksImgs {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   width: 60vw;
   max-width: 65rem;
   position: relative;
+  gap: 10px;
 }
 
 .worksImg {
@@ -38,12 +38,13 @@
   height: 15rem;
   width: 25rem;
   margin: 0.5rem;
+  border-radius: 0.5rem;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .worksImg:hover {
   transform: scale(1.05);
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 20px rgba(249, 241, 2, 0.766);
 }
 
 .worksBtn {

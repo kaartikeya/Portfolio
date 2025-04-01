@@ -3,6 +3,7 @@ import "./skills.css";
 import UIDesign from "../../assets/ui-design.png";
 import WebDesign from "../../assets/website-design.png";
 import CompProg from "../../assets/images.jpg";
+import PublicSpeech from "../../assets/speech.png";
 
 export const Skills = () => {
   return (
@@ -44,6 +45,21 @@ export const Skills = () => {
               I have strong problem-solving skills, actively practicing Data
               Structures and Algorithms on platforms like LeetCode and CodeChef
               to excel in coding challenges.
+            </p>
+          </div>
+        </div>
+        <div className="skillBar">
+          <img
+            src={PublicSpeech}
+            alt="CompetativeProg"
+            className="skillBarImg"
+          />
+          <div className="skillBarText">
+            <h2>Debator/Public Speaker</h2>
+            <p>
+              I am a passionate debater, public speaker, and writer with strong
+              communication and teamwork skills. I collaborate effectively with
+              diverse teams to achieve the best outcomes.
             </p>
           </div>
         </div>

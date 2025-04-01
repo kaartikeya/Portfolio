@@ -1,24 +1,35 @@
-#intro {
-  height: calc(100vh - 4rem);
+.intro {
+  display: flex;
+  justify-content: center;
+  /* height: calc(100vh - 4rem); */
   width: 100vw;
   max-width: 75rem;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
+  gap: 10px;
+}
+
+.intro_img {
+  display: flex;
+  align-items: center;
+  height: 70vh;
 }
 
 .bg {
-  position: absolute;
-  top: 4rem;
-  right: 3rem;
+  /* position: absolute;
+  top: 7rem;
+  right: 3rem; */
   z-index: -1;
   object-fit: cover;
-  height: 80vh;
-  border-radius: 50%;
+  object-position: 50% 9%;
+  height: 32vh;
+  width: 28vh;
+  border-radius: 48%;
 }
 
 .introContent {
-  height: 90vh;
+  height: 80vh;
   width: 100vh;
   padding: 2rem;
   font-size: 3rem;
@@ -41,6 +52,37 @@
   font-size: medium;
   font-weight: 300;
   letter-spacing: 1px;
+}
+
+.cv {
+  display: flex;
+  margin: 20px 0;
+}
+
+.cv_btn {
+  display: inline-flex; /* Ensures it behaves like a button */
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  background-color: #f5f5f5;
+  border-radius: 34px;
+  font-weight: 500;
+  gap: 8px;
+  text-decoration: none; /* Removes underline from <a> tag */
+  border: none; /* No border needed */
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  color: black; /* Ensures text color stays consistent */
+  font-size: 14px;
+}
+
+.cv_btn:hover {
+  /* background-color: yellow; */
+  box-shadow: 0px 0px 20px rgba(249, 241, 2, 0.766);
+}
+
+.cv_icon {
+  height: 22px;
 }
 
 .btn {
